@@ -1,0 +1,131 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Desktop */
+.container{
+    display: flex;
+    justify-content: space-between;
+    width: auto;
+    height: 70px;
+    background-color: rgb(236, 233, 233);
+}
+.imgs{
+    display: flex;
+}
+.img{
+    display: flex;
+    align-items: center;
+}
+.container .img img{
+    height: 50px;
+    margin-left: 10px;
+}
+.text{
+    display: flex;
+    align-items: center;
+}
+.text span{
+    margin-left: 30px;
+    color:  rgb(48, 176, 48);
+    font-size: 18px;
+}
+.text button{
+    background-color: rgb(48, 176, 48);
+    color: white;
+    padding: 10px 20px;
+    margin-left: 30px;
+    border: none;
+    border-radius: 4px;
+    margin-right: 16px;
+}
+.logo img{
+    height: 40px;
+    width: 40px;
+    display: none;
+}
+
+/* Tablet */
+@media only screen and (min-width :501px) and (max-width : 820px) {
+    .container{
+        display: block;
+        height: 120px;
+        background-color:  rgb(48, 176, 48);
+    }
+    .img{
+        display: inline-block;
+        margin-left: 20px;
+        margin-top: 10px;
+    }
+    .imgs{
+        display: flex;
+        justify-content: space-between;
+    }
+    .logo{
+        display: inline-block;
+        margin-bottom: 5px;
+    }
+    .logo img{
+        color: white;
+        display: inline;
+        margin-top: 10px;
+        margin-right: 20px;
+    }
+    .text {
+        display: flex;
+        justify-content: space-between;
+    }
+    .text span{
+        color: white;
+    }
+    .text button{
+        background-color: white;
+        color: rgb(48, 176, 48);
+    }
+    
+}
+
+/* iPhone */
+@media only screen and (max-width : 500px) {
+    .container{
+        display: block;
+        height: 320px;
+        background-color:  rgb(48, 176, 48);
+        color: white;
+    }
+    .imgs{
+        display: flex;
+        justify-content: space-between;
+    }
+    .img{
+        display: inline-block;
+        margin-left: 20px;
+        margin-top: 10px;
+    }
+    .logo{
+        display: inline-block;
+        margin-bottom: 5px;
+    }
+    .logo img{
+        color: white;
+        display: inline;
+        margin-top: 20px;
+    }
+    .text{
+        display: flex;
+        flex-direction: column;
+    }
+    .text span, button{
+        display: block;
+    }
+    .text span{
+        margin-top: 20px;
+        color: white;
+    }
+    .text button{
+        margin-top: 20px;
+        background-color: white;
+        color: rgb(48, 176, 48);
+    }
+}
